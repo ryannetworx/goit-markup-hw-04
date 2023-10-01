@@ -471,7 +471,6 @@ footer {
     margin-top: 50px; /* Add 50px distance from the top */
     margin-left: 50px; /* Add 50px distance from the left */
     justify-content: flex-start; /* Left-align the list items within the container */
-
 }
 
 .footer-social-container {
@@ -491,6 +490,27 @@ footer {
     color: #FFFFFF;
     padding: 10px;
     
+}
+
+.social-button {
+    width: 40px;
+    height: 40px;
+    scale: -0deg;
+    background: #4D5AE5;
+    border-radius: 50%; /* Makes the button circular */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-button img {
+    width: 2%; /* Adjust as needed */
+    height: 2%; /* Adjust as needed */
+    /* max-width: 100%; */
+    /* max-height: 100%; */
 }
 
 /* Style for individual social media icons */
