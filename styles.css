@@ -458,6 +458,49 @@ footer {
     color: #F4F4FD;
 }
 
+/* Footer Social Media Section */
+.footer-social {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: auto; /* Allow content to determine width */
+    height: 40px; /* Adjust as needed */
+    top: 3028px; /* Adjust as needed */
+    left: auto; /* Automatically adjust based on your layout */
+}
+
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-social h4 {
+    /* Style for "Social Media" heading */
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+/* Style for individual social media icons */
+.footer-social ul li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-social ul li img {
+    width: auto; /* Allow images to adjust their width */
+    height: 40px; /* Adjust as needed */
+    padding: 10px;
+}
+
+
+
 /* Additional Styling for the footer as needed*/
 
 
