@@ -417,19 +417,20 @@ h3 {
     width: 40px;
     height: 40px;
     margin: 15px;
+    margin-top: 2px;
     background-color: #4D5AE5;
     border-radius: 50%; /* Makes the button circular */
     border: none;
-    transform: rotate(0deg); /* Angle: 0 deg (no rotation) */
     display: inline-block;
-    justify-content: justify;
-    align-items: justify;
+    justify-content: center;
+    align-items: center;
+    padding: 0; /* Remove padding to ensure the image fits within the button */
 }
 
 /* Style the social icons inside buttons */
 .team-social-button img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 /* Arrange buttons from left to right */
@@ -444,7 +445,7 @@ h3 {
     margin-left: 20px;
 }
 
-.team-instagram,
+/* .team-instagram,
 .team-twitter,
 .team-linkedin {
     width: 16px;
@@ -456,7 +457,7 @@ h3 {
     width: 8px;
     height: 16px;
     align-items: center;
-}
+} */
 
 
 /* Media query for smaller screens */
