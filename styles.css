@@ -518,6 +518,18 @@ footer {
         flex-direction: column; /* Stack elements vertically on smaller screens */
         text-align: center; /* Center text horizontally */
     }
+    
+    /* Center the headings on smaller screens */
+    h4 {
+        text-align: center;
+    }
+    
+    /* Add spacing between footer-logo and footer-social on larger screens */
+    @media (min-width: 768px) {
+        .footer-logo {
+            margin-right: 50px;
+        }
+    }
 }
 
 /* Additional Styling for the footer as needed*/
