@@ -58,8 +58,9 @@ h3 {
     flex-direction: column;
 }
 
-.team1, .customers {
-    /* Styles for team1 and customers */
+.team1,
+.customers,
+.footer {
     width: 100%;
 }
 
@@ -350,17 +351,21 @@ h3 {
 .team1 .team-member {
     text-decoration: none;
     width: 264px; /* Set width to 264px */
-    height: 350px; /* Set height to 380px, will place socials here */
+    height: auto; /* Set height to 380px, will place socials here */
     margin: 10px; /* Add margin between team members */
     border-radius: 0px 0px 4px 4px; /* Set border-radius */
     background: #FFFFFF;
     box-shadow: 0px 2px 1px 0px #2E2F4214, 0px 1px 1px 0px #2E2F4229, 0px 1px 6px 0px #2E2F4214;
     padding: 0px 0px 32px 0px; /* Set padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Distribute content evenly vertically */
 }
 
 .team1 .team-member-content1 {
     max-width: auto;
-    height: auto;
+    height: 390px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -379,6 +384,8 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-grow: 1; /* Allow the info-box to expand vertically */
+
 }
 
 .team1 h3 {
@@ -409,10 +416,14 @@ h3 {
 .team-social-button {
     width: 40px;
     height: 40px;
-    margin: 5px;
+    margin: 15px;
     background-color: #4D5AE5;
+    border-radius: 50%; /* Makes the button circular */
     border: none;
     transform: rotate(0deg); /* Angle: 0 deg (no rotation) */
+    display: inline-block;
+    justify-content: justify;
+    align-items: justify;
 }
 
 /* Style the social icons inside buttons */
@@ -430,7 +441,7 @@ h3 {
 
 /* Optional: Add some spacing between buttons */
 .team-social-button + .team-social-button {
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .team-instagram,
@@ -438,11 +449,13 @@ h3 {
 .team-linkedin {
     width: 16px;
     height: 16px;
+    align-items: center;
 }
 
 .team-facebook {
     width: 8px;
     height: 16px;
+    align-items: center;
 }
 
 
