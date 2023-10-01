@@ -464,6 +464,11 @@ footer {
 }
 
 /* Footer Social Media Section */
+
+.footer-social-container {
+    margin-left: 50px; /* Add a 50px margin to the left */
+}
+
 .footer-social {
     display: flex;
     align-items: center;
@@ -494,10 +499,9 @@ footer {
 /* Style for individual social media icons */
 .footer-social ul li {
     display: inline-block;
-    margin: 0;
+    margin: 0; /* Add 50px distance from left to right when screen is large */
     padding: 0;
-    text-align: center; /* Center the ul on smaller screens */
-
+    text-align: center; /* Center align images when screen is smaller */
 }
 
 .footer-social ul li img {
@@ -533,7 +537,10 @@ footer {
     .footer-social ul {
         text-align: center; /* Center the ul on smaller screens */
     }
-}
+    .footer-social-container {
+            margin: 0; /* Remove margin on smaller screens */
+        }
+    }
 
 /* Additional Styling for the footer as needed*/
 
