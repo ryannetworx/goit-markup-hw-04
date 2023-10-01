@@ -499,6 +499,13 @@ footer {
     padding: 10px;
 }
 
+/* Footer Logo and Social Media Sections */
+.footer-logo,
+.footer-social {
+    display: inline-flex;
+    align-items: center;
+    padding: 50px; /* Adjust the gap as needed */
+}
 
 
 /* Additional Styling for the footer as needed*/
