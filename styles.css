@@ -430,6 +430,8 @@ h3 {
     align-items: center;
     gap: 20px; /* Add gap between customer boxes */
     margin-top: 20px; /* Add margin to separate from the heading */
+    flex-wrap: wrap; /* Allow customer boxes to wrap to the next line on smaller screens */
+
 }
 
 .customer-box {
@@ -472,13 +474,14 @@ h3 {
     }
     
     .customer-box {
-        width: auto; /* Remove the width constraint */
-        max-width: 190px; /* Set the maximum width to 168px */
-        margin-bottom: 20px; /* Add margin between customer boxes */
+        width: calc(50% - 20px); /* Display two boxes per row with spacing in between */
+        max-width: 168px; /* Set the maximum width to 168px */
+        margin-bottom: 10px; /* Add margin between customer boxes */
     }
     
     .customer-box img {
         max-width: 100%; /* Reduce image size on smaller screens */
+
     }
 }
 
