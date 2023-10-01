@@ -418,7 +418,10 @@ footer {
     background: #2E2F42;
     padding: 40px 0;
     margin-top: 100px; /* Add margin to the top of the footer, <ul class="row-3"> didn't move */
-
+    display: flex; /* Add flex display for centering */
+    justify-content: space-between; /* Space between footer elements */
+    align-items: center; /* Center vertically */
+    flex-wrap: wrap; /* Allow elements to wrap on smaller screens */
 }
 
 .footer-list-container {
@@ -432,6 +435,8 @@ footer {
     align-items: flex-start;
     list-style: none;
     padding-left: 80px;
+    flex: 1; /* Allow this element to grow to fill space */
+
 }
 
 #web-footer, #studio-footer {
@@ -465,8 +470,8 @@ footer {
     gap: 16px;
     width: auto; /* Allow content to determine width */
     height: 40px; /* Adjust as needed */
-    top: 3028px; /* Adjust as needed */
-    left: auto; /* Automatically adjust based on your layout */
+    /* top: 3028px; Adjust as needed */
+    /* left: auto; Automatically adjust based on your layout */
 }
 
 .footer-social ul {
@@ -504,9 +509,16 @@ footer {
 .footer-social {
     display: inline-flex;
     align-items: center;
-    padding: 50px; /* Adjust the gap as needed */
+    flex: 1; /* Allow these elements to grow to fill space */
+    padding: 0; /* Remove padding to avoid extra spacing */
 }
 
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        text-align: center; /* Center text horizontally */
+    }
+}
 
 /* Additional Styling for the footer as needed*/
 
