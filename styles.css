@@ -470,7 +470,7 @@ footer {
     gap: 16px;
     width: auto; /* Allow content to determine width */
     height: 40px; /* Adjust as needed */
-    /* top: 3028px; Adjust as needed */
+    margin-top: 50px; /* Add 50px distance from the top */
     /* left: auto; Automatically adjust based on your layout */
 }
 
@@ -487,7 +487,7 @@ footer {
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.02em;
-    text-align: left;
+    text-align: center;
     color: #FFFFFF;
 }
 
@@ -496,6 +496,8 @@ footer {
     display: inline-block;
     margin: 0;
     padding: 0;
+    text-align: center; /* Center the ul on smaller screens */
+
 }
 
 .footer-social ul li img {
@@ -515,20 +517,21 @@ footer {
 
 @media (max-width: 768px) {
     footer {
-        flex-direction: column; /* Stack elements vertically on smaller screens */
-        text-align: center; /* Center text horizontally */
+        flex-direction: column;
+        text-align: center;
     }
-    
+
     /* Center the headings on smaller screens */
     h4 {
         text-align: center;
     }
-    
-    /* Add spacing between footer-logo and footer-social on larger screens */
-    @media (min-width: 768px) {
-        .footer-logo {
-            margin-right: 50px;
-        }
+
+    .footer-social {
+        margin-top: 0; /* Remove the top margin on smaller screens */
+    }
+
+    .footer-social ul {
+        text-align: center; /* Center the ul on smaller screens */
     }
 }
 
