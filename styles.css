@@ -417,17 +417,16 @@ footer {
     width: 100%;
     background: #2E2F42;
     padding: 40px 0;
-    margin-top: 100px; /* Add margin to the top of the footer, <ul class="row-3"> didn't move */
-    display: flex; /* Add flex display for centering */
-    justify-content: space-between; /* Space between footer elements */
-    align-items: center; /* Center vertically */
-    flex-wrap: wrap; /* Allow elements to wrap on smaller screens */
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align elements at the top */
+    flex-wrap: wrap;
 }
 
 .footer-list-container {
     width: auto;
     height: 250px;
-    top: 2280px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -435,8 +434,7 @@ footer {
     align-items: flex-start;
     list-style: none;
     padding-left: 80px;
-    flex: 1; /* Allow this element to grow to fill space */
-
+    flex: 1;
 }
 
 #web-footer, #studio-footer {
@@ -446,11 +444,11 @@ footer {
     line-height: 21px;
     letter-spacing: 0.03em;
     text-align: left;
-    color: #4D5AE5; /* WEB */
+    color: #4D5AE5;
 }
 
 #studio-footer {
-    color: #F4F4FD; /* STUDIO */
+    color: #F4F4FD;
 }
 
 .footer-list-container p {
@@ -464,50 +462,55 @@ footer {
 }
 
 /* Footer Social Media Section */
-
-.footer-social-container {
-    margin-left: 50px; /* Add a 50px margin to the left */
-}
-
 .footer-social {
     display: flex;
     align-items: center;
     gap: 16px;
-    width: auto; /* Allow content to determine width */
-    height: 40px; /* Adjust as needed */
+    width: auto;
+    height: 40px;
     margin-top: 50px; /* Add 50px distance from the top */
-    /* left: auto; Automatically adjust based on your layout */
+    margin-left: 50px; /* Add 50px distance from the left */
+    justify-content: flex-start; /* Left-align the list items within the container */
+
 }
 
-.footer-social ul {
+.footer-social-container {
     list-style: none;
     padding: 0;
     margin: 0;
+    text-align: left; /* Left-align the ul */
 }
 
 .footer-social h4 {
-    /* Style for "Social Media" heading */
     font-family: Roboto, sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.02em;
-    text-align: center;
+    text-align: left;
     color: #FFFFFF;
+    padding: 10px;
+    
 }
 
 /* Style for individual social media icons */
-.footer-social ul li {
+.footer-social-container li {
     display: inline-block;
-    margin: 0; /* Add 50px distance from left to right when screen is large */
+    margin: 0;
     padding: 0;
-    text-align: center; /* Center align images when screen is smaller */
+    /* text-align: left; Align the social media icons to the left */
 }
 
-.footer-social ul li img {
-    width: auto; /* Allow images to adjust their width */
-    height: 40px; /* Adjust as needed */
+.footer-social-container li img {
+    width: auto;
+    height: 40px;
     padding: 10px;
+}
+
+/* Left-align the elements */
+.footer-social h4,
+.footer-social-container li {
+    text-align: left;
 }
 
 /* Footer Logo and Social Media Sections */
@@ -515,8 +518,8 @@ footer {
 .footer-social {
     display: inline-flex;
     align-items: center;
-    flex: 1; /* Allow these elements to grow to fill space */
-    padding: 0; /* Remove padding to avoid extra spacing */
+    flex: 1;
+    padding: 50px;
 }
 
 @media (max-width: 768px) {
@@ -526,21 +529,22 @@ footer {
     }
 
     /* Center the headings on smaller screens */
-    h4 {
-        text-align: center;
+    .footer-social h4 {
+        text-align: center; /* Center-align the "Social Media" heading when screen is smaller */
     }
 
     .footer-social {
-        margin-top: 0; /* Remove the top margin on smaller screens */
+        margin-top: 0;
+        margin-left: 0; /* Remove the top and left margin on smaller screens */
+        justify-content: center; /* Center the social media icons horizontally */
     }
-
-    .footer-social ul {
-        text-align: center; /* Center the ul on smaller screens */
-    }
+    
     .footer-social-container {
-            margin: 0; /* Remove margin on smaller screens */
-        }
+        text-align: center; /* Center-align the ul on smaller screens */
     }
+}
+
+
 
 /* Additional Styling for the footer as needed*/
 
