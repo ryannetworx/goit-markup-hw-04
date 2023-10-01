@@ -412,6 +412,47 @@ h3 {
 /* END OF TEAM1 */
 
 
+
+/* Customers section */
+.customers {
+    margin-top: 40px; /* Add margin to separate from the team section */
+    text-align: center; /* Center the content */
+}
+
+.image-container-customers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Add gap between customer boxes */
+    margin-top: 20px; /* Add margin to separate from the heading */
+}
+
+.customer-box {
+    width: 168px;
+    height: 88px;
+    border-radius: 4px;
+    border: 1px solid #8E8F99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.customer-box img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Change the background color on hover */
+.customer-box:hover {
+    background-color: #404BBF;
+}
+
+
+
+
 /* Footer Styles */
 footer {
     width: 100%;
