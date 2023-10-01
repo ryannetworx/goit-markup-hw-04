@@ -440,7 +440,6 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: background-color 0.3s ease;
 }
 
 .customer-box img {
@@ -448,11 +447,13 @@ h3 {
     height: auto;
     max-width: 100%;
     max-height: 100%;
+    transition: filter 0.3s ease; /* Add transition for the filter property */
+
 }
 
 /* Change the background color on hover */
-.customer-box:hover {
-    background-color: #404BBF;
+.customer-box:hover img {
+    filter: invert(38%) sepia(45%) saturate(3558%) hue-rotate(233deg) brightness(88%) contrast(86%);
 }
 
 /* END of CUSTOMERS */
