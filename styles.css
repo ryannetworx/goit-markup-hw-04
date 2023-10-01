@@ -506,13 +506,6 @@ footer {
     align-items: center;
 }
 
-.social-button img {
-    width: 2%; /* Adjust as needed */
-    height: 2%; /* Adjust as needed */
-    /* max-width: 100%; */
-    /* max-height: 100%; */
-}
-
 /* Style for individual social media icons */
 .footer-social-container li {
     display: inline-block;
@@ -521,10 +514,11 @@ footer {
     /* text-align: left; Align the social media icons to the left */
 }
 
-.footer-social-container li img {
-    width: auto;
-    height: 40px;
-    padding: 10px;
+.social-button img {
+    width: 20px; /* Adjust as needed */
+    height: 20px; /* Adjust as needed */
+    /* max-width: 100%; */
+    /* max-height: 100%; */
 }
 
 /* Left-align the elements */
