@@ -53,6 +53,16 @@ h3 {
     color: var(--primary-body-color);
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.team1, .customers {
+    /* Styles for team1 and customers */
+    width: 100%;
+}
+
 /* Link and Small typography not yet included */
 
 /* Navigation */
@@ -304,7 +314,7 @@ h3 {
 
 .team1 {
     width: 100%;
-    min-height: 720px;
+    min-height: 620px;
     background: #F4F4FD;
     margin-top: 40px;
     position: relative;
@@ -395,6 +405,46 @@ h3 {
     margin: 0; /* Reset the margin to zero */
     line-height: 1.1; /* Set the minimum line height to 1.1 (adjust as needed) */
 }
+
+.team-social-button {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    background-color: #4D5AE5;
+    border: none;
+    transform: rotate(0deg); /* Angle: 0 deg (no rotation) */
+}
+
+/* Style the social icons inside buttons */
+.team-social-button img {
+    width: 100%;
+    height: auto;
+}
+
+/* Arrange buttons from left to right */
+.team-socials {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+/* Optional: Add some spacing between buttons */
+.team-social-button + .team-social-button {
+    margin-left: 10px;
+}
+
+.team-instagram,
+.team-twitter,
+.team-linkedin {
+    width: 16px;
+    height: 16px;
+}
+
+.team-facebook {
+    width: 8px;
+    height: 16px;
+}
+
 
 /* Media query for smaller screens */
 @media (max-width: 768px) { /* Adjust the breakpoint as needed */
