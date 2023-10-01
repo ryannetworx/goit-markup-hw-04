@@ -235,10 +235,9 @@ h3 {
 /* Align table headings with h3 attributes */
 .section-content-1 table {
     margin: 0 auto; /* Center the table horizontally */
-    max-width: 1250px; /* Set a maximum width for the table */
+    max-width: 264px; /* Set a maximum width for the table */
     border-collapse: collapse;
 }
-
 
 .section-content-1 th {
     font-family: "Roboto", sans-serif;
@@ -260,6 +259,21 @@ h3 {
     color: var(--primary-body-color);
     text-align: left;
     padding: 10px;
+}
+
+.feature-box {
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    background-color: #F4F4FD;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+.feature-box img {
+    width: 64px;
+    height: 64px;
 }
 
 /* Responsive table - split into two columns on smaller screens */
