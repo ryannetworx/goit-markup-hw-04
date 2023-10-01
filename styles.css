@@ -304,7 +304,7 @@ h3 {
 
 .team1 {
     width: 100%;
-    min-height: 620px;
+    min-height: 720px;
     background: #F4F4FD;
     margin-top: 40px;
     position: relative;
@@ -415,8 +415,13 @@ h3 {
 
 /* Customers section */
 .customers {
-    margin-top: 40px; /* Add margin to separate from the team section */
-    text-align: center; /* Center the content */
+    width: 100%;
+    min-height: 420px;
+    background: #ffffff;
+    margin-top: 40px;
+    position: relative;
+    padding-top: 80px;
+    text-align: center; /* Center text horizontally */
 }
 
 .image-container-customers {
@@ -428,7 +433,7 @@ h3 {
 }
 
 .customer-box {
-    width: 168px;
+    min-width: 168px;
     height: 88px;
     border-radius: 4px;
     border: 1px solid #8E8F99;
@@ -450,6 +455,7 @@ h3 {
     background-color: #404BBF;
 }
 
+/* END of CUSTOMERS */
 
 
 
