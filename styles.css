@@ -514,11 +514,28 @@ footer {
     /* text-align: left; Align the social media icons to the left */
 }
 
-.social-button img {
-    width: 20px; /* Adjust as needed */
-    height: 20px; /* Adjust as needed */
-    /* max-width: 100%; */
-    /* max-height: 100%; */
+.footer-instagram {
+    width: 24px;
+    height: 24px;
+    align-content: center;
+}
+
+.footer-twitter {
+    width: 24px;
+    height: 19.5px;
+    align-items: center;
+}
+
+.footer-facebook {
+    width: 12px;
+    height: 24px;
+    align-content: center;
+}
+
+.footer-linkedin  {
+    width: 23px;
+    height: 23px;
+    align-content: center;
 }
 
 /* Left-align the elements */
